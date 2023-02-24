@@ -1,0 +1,81 @@
+.div-padre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container {
+    background-image: url('../img/fondo.jpg'); /* Reemplazar con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Altura del contenedor */
+    overflow: hidden; /* Evita que el contenido del contenedor se salga del fondo */
+  }
+  
+.container h1{
+    padding: 40px 90px;
+    align-items: center;
+    color: #F9D99A;
+}
+
+.container p{
+    padding: 0 90px;
+    color: #F9D99A;
+    max-width: 40rem;
+}
+
+.categoria h1{
+    
+}
+
+.categoria-jabones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0px;
+    gap: 20px;
+}
+
+.jabon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 22px;
+
+    width: 432px;
+    height: 321px;
+}
+
+.dermo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2px 0px;
+    gap: 15px;
+
+    width: 432px;
+    height: 323px;
+}
+
+.protector{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2px 0px;
+    gap: 18px;
+
+    width: 432px;
+    height: 316px;
+}
+
+.categoria-jabones label{
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
