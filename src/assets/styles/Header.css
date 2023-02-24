@@ -22,8 +22,8 @@
   }
   
   .logo-img {
-    width: 7rem;
-    height: 7rem;
+    width: 4rem;
+    height: 4rem;
   }
   
   .navbar-collapse {
@@ -47,7 +47,7 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    padding: 10px 50px;
+    padding: 10px 30px;
     border-radius: 10px;
   }
   
@@ -63,7 +63,7 @@
   .search-box {
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-right: 10px;
     font-size: 16px;
     background-color: #f0f0f0;

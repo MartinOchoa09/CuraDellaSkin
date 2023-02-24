@@ -2,65 +2,65 @@
     margin: 0;
 }
 
-.navbar {
+.navbar-secundario {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #95B8F6;
+    background-color: #F9A59A;
     padding: 10px 20px;
   }
   
-  .navbar-brand {
+  .navbar-brand-secundario {
     display: flex;
     align-items: center;
   }
   
-  .navbar-logo {
+  .navbar-logo-secundario {
     display: flex;
     align-items: center;
     text-decoration: none;
   }
   
-  .logo-img {
-    width: 7rem;
-    height: 7rem;
+  .logo-img-secundario {
+    width: 4rem;
+    height: 4rem;
   }
   
-  .navbar-collapse {
+  .navbar-collapse-secundario {
     display: flex;
     align-items: center;
   }
   
-  .navbar-nav {
+  .navbar-nav-secundario {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
-  .nav-item {
+  .nav-item-secundario {
     margin-right: 20px;
   }
   
-  .nav-link {
+  .nav-link-secundario {
     color: #3c3c3c;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    padding: 10px 50px;
+    padding: 10px 30px;
     border-radius: 10px;
   }
   
-  .nav-link:hover {
-    background-color: #F9A59A;
+  .nav-link-secundario:hover {
+    background-color: #95B8F6;
   }
   
-  .search-form {
+  .search-form-secundario {
     display: flex;
     align-items: center;
   }
   
-  .search-box {
+  .search-box-secundario {
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -69,7 +69,7 @@
     background-color: #f0f0f0;
   }
   
-  .search-button {
+  .search-button-secundario {
     padding: 10px 20px;
     background-color: #333;
     color: #fff;

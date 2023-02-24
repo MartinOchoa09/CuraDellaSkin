@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import cds from "../../assets/icons/cds-removebg-preview.png";
+import cds from "../../assets/icons/cds.png";
 import "../../assets/styles/Header.css";
 
 

@@ -4,21 +4,21 @@ import "../../assets/styles/HeaderSecundario.css";
 
 function HeaderSecundario() {
     return ( 
-        <nav className="navbar">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-logo">
-          <img src={cdsSecundario} alt="Logo" className="logo-img" />
+        <nav className="navbar-secundario">
+      <div className="navbar-brand-secundario">
+        <Link to="/" className="navbar-logo-secundario">
+          <img src={cdsSecundario} alt="Logo" className="logo-img-secundario" />
         </Link>
       </div>
-      <div className="navbar-collapse">
-        <ul className="navbar-nav">
-          <li className="nav-item"><Link to="/" className="nav-link">Inicio</Link></li>
-          <li className="nav-item"><Link to="/informacion" className="nav-link">Informacion</Link></li>
-          <li className="nav-item"><Link href="/contactanos" className="nav-link">Contactanos</Link></li>
+      <div className="navbar-collapse-secundario">
+        <ul className="navbar-nav-secundario">
+          <li className="nav-item-secundario"><Link to="/" className="nav-link">Inicio</Link></li>
+          <li className="nav-item-secundario"><Link to="/informacion" className="nav-link">Informacion</Link></li>
+          <li className="nav-item-secundario"><Link href="/contactanos" className="nav-link">Contactanos</Link></li>
         </ul>
-        <form className="search-form">
-          <input type="text" placeholder="Buscar" className="search-box" />
-          <button type="submit" className="search-button">Buscar</button>
+        <form className="search-form-secundario">
+          <input type="text" placeholder="Buscar" className="search-box-secundario" />
+          <button type="submit" className="search-button-secundario">Buscar</button>
         </form>
       </div>
     </nav>
