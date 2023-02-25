@@ -1,0 +1,38 @@
+.footer-container{
+    background-color: #ADD5FA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-container-servicio{
+    margin: 30px 0;
+    color: #FFFFFF;
+}
+
+.footer-span{
+    color: #FFFFFF;
+}
+
+.footer-container-terminos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container-terminos{
+    margin: 30px 0;
+}
+
+.footer-terminos{
+    color: #002D7C;
+}
+
+.footer-container-contactanos-iconos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.h3{
+    background-color: #ADD5FA;
+}
