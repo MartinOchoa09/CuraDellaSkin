@@ -15,16 +15,21 @@ function FormRegister() {
             method: 'POST',
             headers: {"Content-Type": 'application/json'},
             body:JSON.stringify({
+              apellido: form.get('apellido'),
               nombre: form.get('nombre'),
               edad: form.get('edad'),
+              username: form.get('username'),
               correo: form.get('correo'),
               contrasena: form.get('contrasena'),
-              fecha_nacimiento: form.get('fechaN')
+              fecha_nacimiento: form.get('fechaN'),
+              sexo: form.get('hombre'),
             })
         }
         fetch(uri, options)
         .then(response =>response.json())
         .then(data=>alert(JSON.stringify(data)))
+        alert("Su registro ha sido exitoso!")
+        navigate("/login")
         
 
     }

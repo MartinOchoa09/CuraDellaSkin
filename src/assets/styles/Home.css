@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.categoria{
+    margin: 50px 0;
+}
+
 .container {
     background-image: url('../img/fondo.jpg'); /* Reemplazar con la ruta de tu imagen de fondo */
     background-size: cover;
@@ -52,13 +56,13 @@ h1{
 
 h3{
     font-size: 25px;
-    padding: 20px 0;
-    background-color: #D9D9D9;
+    padding: 25px 0;
+    background-color: #F9D99A;
     margin: 0 15px;
 }
 
 .cura-della-skin{
-    margin: 140px 40px;
+    margin: 100px 0;
 }
 
 .texto-cura-della-skin{
@@ -68,11 +72,13 @@ h3{
 
 .titulo-cds{
     background-color: #D9D9D9;
-    padding: 0 70px;
+    margin: 0 20px;
 }
 
 .tutoriales-cds{
     padding: 0px 30px;
 }
 
-
+.contactanos-hijo-title{
+    background-color: #ADD5FA;
+}

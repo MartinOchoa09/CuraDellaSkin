@@ -1,11 +1,12 @@
 .contactanos-clase-padre{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 60px;
 }
 
 .contactanos-hijo-title{
   width: 100%;
+  margin: 30px;
 }
 
 .contactanos-hijo{

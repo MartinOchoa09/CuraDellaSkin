@@ -26,6 +26,7 @@ function FormLogin() {
         fetch(uri, option)
         .then(response=>response.json())
         .then(data=>alert(JSON.stringify(data)))
+        alert("Bienvenido(a) a CDS!")
         navigate('/')
     }
     return ( 

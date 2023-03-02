@@ -63,7 +63,7 @@ function FormHome() {
         </div>
     </div>
     <div className="contactanos-clase-padre">
-                    <h1 className="contactanos-hijo-title">Contactanos</h1>
+                <h1 className="contactanos-hijo-title">Contactanos</h1>
                 <div className="contactanos-hijo">
                     <div className="informacion">
                         <div className="contactanos-hijo-nombre">
