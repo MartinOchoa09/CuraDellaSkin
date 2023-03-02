@@ -1,4 +1,4 @@
-import FormFavoritos from "../containers/FormFavoritos";
+import FormFavoritos from "../components/atoms/FormFavoritos";
 
 function Favoritos() {
     return ( 

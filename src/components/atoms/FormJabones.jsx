@@ -1,4 +1,4 @@
-import HeaderSecundario from "../components/atoms/HeaderSecundario";
+import HeaderSecundario from "./HeaderSecundario";
 
 function FormJabones() {
     return ( 

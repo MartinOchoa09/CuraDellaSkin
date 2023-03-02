@@ -1,4 +1,4 @@
-import FormHome from "../containers/FormHome";
+import FormHome from "../components/atoms/FormHome";
 
 function Home() {
     return ( 

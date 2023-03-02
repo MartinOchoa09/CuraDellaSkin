@@ -1,4 +1,4 @@
-import FormComprar from "../containers/FormComprar";
+import FormComprar from "../components/atoms/FormComprar";
 
 function Comprar() {
     return ( 

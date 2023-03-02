@@ -15,7 +15,6 @@ function Header() {
         <ul className="navbar-nav">
           <li className="nav-item"><Link to="/" className="nav-link">Inicio</Link></li>
           <li className="nav-item"><Link to="/informacion" className="nav-link">Informacion</Link></li>
-          <li className="nav-item"><Link to="/contactanos" className="nav-link">Contactanos</Link></li>
         </ul>
         <form className="search-form">
           <input type="text" placeholder="Buscar" className="search-box" />

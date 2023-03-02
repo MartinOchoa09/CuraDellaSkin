@@ -31,7 +31,7 @@ function Footer() {
                     </div>
                     <div><h3 className="h3">Siguenos en:</h3></div>
                     <div className="footer-container-contactanos-iconos">
-                        <div><img src={Facebook} alt="Icono Facebook" /></div>
+                        <div><Link to="https://www.facebook.com/profile.php?id=100090780844811&sk=photos"><img src={Facebook} alt="Icono Facebook" /></Link></div>
                         <div><img src={Gmail} alt="Icono Gmail" /></div>
                         <div><img src={Instagram} alt="Icono instagram" /></div>
                         <div> <img src={Twitter} alt="Icono Twitter" /></div>

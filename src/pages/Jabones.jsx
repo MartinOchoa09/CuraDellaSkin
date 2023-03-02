@@ -1,5 +1,4 @@
-import FormJabones from "../containers/FormJabones";
-
+import FormJabones from "../components/atoms/FormJabones";
 function Jabones() {
     return ( 
         <FormJabones/>

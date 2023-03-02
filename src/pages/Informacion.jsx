@@ -1,4 +1,4 @@
-import FormInformacion from "../containers/FormInformacion";
+import FormInformacion from "../components/atoms/FormInformacion";
 
 function Informacion() {
     return ( 
