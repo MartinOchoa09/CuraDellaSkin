@@ -29,10 +29,11 @@ function FormHome() {
             alert("Usted tiene que estar registrado")
             navigate("/login");
         }
+        e.preventdefault()
     }
 
     return (
-        <form ref={formData}>
+        
     <div className="div-padre">
         <Header />
     <div className="container">
@@ -42,7 +43,7 @@ function FormHome() {
         </p>
     </div>
     <div className="categoria">
-        <h1>Categoria de Productos</h1>
+        <h1 className="edicion-h1">Categoria de Productos</h1>
     </div>
     <div className="categoria-jabones">
         <div className="contenedor">
@@ -62,6 +63,7 @@ function FormHome() {
             </div>
         </div>
     </div>
+    <form ref={formData}>
     <div className="contactanos-clase-padre">
                 <h1 className="contactanos-hijo-title">Contactanos</h1>
                 <div className="contactanos-hijo">
@@ -100,9 +102,9 @@ function FormHome() {
                         <img src={Dermatologa} className="dermatologa" />
                     </div>
         </div>
+        </form>
     <Footer/>
     </div>
-    </form>
      );
 }
 

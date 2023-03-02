@@ -1,7 +1,9 @@
 import { useState, useContext, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import UserContext from "../../context/Usercontext";
 import Name from "../molecules/Name";
+import Logo from "../../assets/icons/cdsSecundario.png";
+import UserContext from "../../context/Usercontext";
+import "../../assets/styles/Login.css";
 
 
 function FormLogin() {
@@ -18,8 +20,8 @@ function FormLogin() {
             method: 'POST',
             headers:{"Content-Type": 'application/json'},
             body: JSON.stringify({
-                username: formLogin.get('username'),
-                password: formLogin.get('password')
+                username: formLogin.get('usuario'),
+                password: formLogin.get('password'),
             })
         }
         setIsLoged(true)
@@ -32,12 +34,14 @@ function FormLogin() {
     return ( 
         <form ref={form}>
         <div className="form-login">
+            <div className="imagen-empresa">
+                <img src={Logo} alt="logo de la empresa" className="img"/>
+                <Name msn="Cura Della Skin"/>
+            </div>
             <div className="form-login-secundario">
-            <img src="" alt="logo de la empresa" />
-            <Name msn="Cura Della Skin"></Name>
             <div className="form-login-username">
                 <label>Username</label>
-                <input type="text" name="username"/>
+                <input type="text" name="usuario"/>
             </div>
             <div className="form-login-password">
                 <label>Contraseña</label>

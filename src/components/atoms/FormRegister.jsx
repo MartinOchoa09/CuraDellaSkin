@@ -18,11 +18,10 @@ function FormRegister() {
               apellido: form.get('apellido'),
               nombre: form.get('nombre'),
               edad: form.get('edad'),
-              username: form.get('username'),
+              username: form.get('usuario'),
               correo: form.get('correo'),
               contrasena: form.get('contrasena'),
               fecha_nacimiento: form.get('fechaN'),
-              sexo: form.get('hombre'),
             })
         }
         fetch(uri, options)
@@ -75,9 +74,9 @@ function FormRegister() {
                     <div>
                        <label>Sexo</label>
                        <div>
-                        <input type="radio" placeholder="Hombre" name="hombre"/>Hombre
-                        <input type="radio" placeholder="Mujer" name="mujer"/>Mujer
-                        <input type="text" placeholder="Género (opcional)" name="opcional"/>
+                        <input type="radio" name="hombre"/>Hombre
+                        <input type="radio" name="mujer"/>Mujer
+                        <input type="text" name="opcional"/>
                        </div>
                     </div>
                     <button onClick={handlerClick}>Registrarme</button>

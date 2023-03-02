@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 .div-padre{
     display: flex;
     flex-direction: column;
@@ -22,16 +26,16 @@
     color: #F9D99A;
 }
 
-h1{
+.edicion-h1{
     text-align: center;
     font-weight: 400;
-    
 }
 
 .container p{
     padding: 0 30px;
     color: #F9D99A;
     max-width: 50rem;
+   
 }
 
 .categoria-jabones{
@@ -80,5 +84,7 @@ h3{
 }
 
 .contactanos-hijo-title{
+    text-align: center;
+    font-weight: 400;
     background-color: #ADD5FA;
 }
