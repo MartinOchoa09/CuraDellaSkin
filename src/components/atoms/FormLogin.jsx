@@ -1,41 +1,42 @@
-import { useState, useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Name from "../molecules/Name";
 import Logo from "../../assets/icons/cdsSecundario.png";
-import UserContext from "../../context/Usercontext";
 import "../../assets/styles/Login.css";
+import UserContext from "../../context/Usercontext";
 
 
 function FormLogin() {
 
-    const [stateForm, setStateForm] = useState({username: '', password: ''})
-    const {isLoged, setIsLoged} = useContext(UserContext);
-    const form = useRef();
     const navigate = useNavigate();
+    const form = useRef();
+    const {isLoged, setIsLoged} = useContext(UserContext);
+    
+    const handlerClickLogin = (e) =>{
+        e.preventDefault()
+        const formData = new FormData(form.current);
+        const username = formData.get("usuario");
+        const contrasena = formData.get("password");
+        const url = `https://cds.iothings.com.mx:3000/users/${username}/${contrasena}`;
 
-    const handlerClick = (e) => {
-        const formLogin = new FormData(form.current)
-        let uri = "https://cds.iothings.com.mx:3000/users";
-        let option={
-            method: 'POST',
-            headers:{"Content-Type": 'application/json'},
-            body: JSON.stringify({
-                username: formLogin.get('usuario'),
-                password: formLogin.get('password'),
-            })
-        }
+        fetch(url)
+        .then((response) => response.json())
+        .then((data) => {   
+            console.log("datos", data)})
+        .catch((err) => {
+            console.log(err)
+        });
         setIsLoged(true)
-        fetch(uri, option)
-        .then(response=>response.json())
-        .then(data=>alert(JSON.stringify(data)))
-        alert("Bienvenido(a) a CDS!")
-        navigate('/')
-    }
+        navigate("/")
+    };
+    
+    
     return ( 
-        <form ref={form}>
+        <main className="form-display">
+        <form ref={form} className="form-display-form">
         <div className="form-login">
             <div className="imagen-empresa">
-                <img src={Logo} alt="logo de la empresa" className="img"/>
+                <Link to="/"><img src={Logo} alt="logo de la empresa" className="img"/></Link>
                 <Name msn="Cura Della Skin"/>
             </div>
             <div className="form-login-secundario">
@@ -48,15 +49,16 @@ function FormLogin() {
                 <input type="password" name="password"/>
             </div>
             <div className="form-login-iniciosesion">
-                <button onClick={handlerClick}>Iniciar Sesion</button>
-                <Link to="forgotPassword">Recuperar contraseña</Link>
+                <button onClick={handlerClickLogin}>Iniciar Sesion</button>
+                <Link to="/forgotPassword">Recuperar contraseña</Link>
             </div>
             </div>
             <div className="form-login-register">
-                ¿No tienes cuenta?<Link to="/register">Registrate ahora</Link>
+                ¿No tienes cuenta? <Link to="/register">Registrate ahora</Link>
             </div>
         </div>
         </form>
+        </main>
      );
 }
 

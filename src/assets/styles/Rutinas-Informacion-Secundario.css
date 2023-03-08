@@ -1,0 +1,14 @@
+.informacion{
+    display: flex;
+    flex-direction: row;
+}
+
+.parrafo-uno-rutinas{
+    margin: 0;
+    padding: 40px;
+}
+
+.parrafo-dos-rutinas{
+    margin: 0;
+    padding: 40px;
+}

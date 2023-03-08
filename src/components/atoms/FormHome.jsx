@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useRef, useContext } from "react";
+import { useRef, useContext, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Jabones from "../../assets/img/Jabones.png";
@@ -17,23 +17,31 @@ import "../../assets/styles/Contactanos.css";
 
 function FormHome() {
 
-    const {isLoged, setIsLoged} = useContext(UserContext)
-    const navigate = useNavigate()
+        const navigate = useNavigate()
         const formData = useRef()
+        const [load, setIsLoad] = useState(false)
+        const {isLoged, setIsLoged} = useContext(UserContext)
 
     const handlerClickLogin = (e) => {
-        e.preventdefault
-        if (isLoged) {
+        if(setIsLoad(!load)){
             alert("Su correo se ha enviado con exito")
         }else{
-            alert("Usted tiene que estar registrado")
-            navigate("/login");
+            alert("Tienes que iniciar sesión")
+            navigate("/login")
         }
-        e.preventdefault()
+        // if (isLoged) {
+        //     alert("Su correo se ha enviado con exito")
+        // }else{
+        //     alert("Usted tiene que estar registrado")
+        //     navigate("/login");
+        // }
     }
 
+    // useEffect(()=>{
+    //     alert("Usted debe estar registrado en CDS")
+    // }, [load])
+
     return (
-        
     <div className="div-padre">
         <Header />
     <div className="container">

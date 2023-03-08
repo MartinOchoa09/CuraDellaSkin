@@ -1,0 +1,59 @@
+.form-padre{
+    display: flex;
+    justify-content: center;
+}
+
+.registro-hijo input{
+    border: none;
+    border-radius: 5px;
+    background-color: #EFEFEF;
+    padding: 1em;
+    outline: 0;
+}
+
+.registro-hijo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.registro-hijo h3{
+    background-color: #fff;
+}
+
+.registro-hijo .titulos{
+    border-bottom: 1px solid black;
+}
+
+.registro-hijo .registro-usuario-contrasena{
+    width: 100%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sexualidad{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sexualidad .sexo-hombre, .sexo-mujer, .sexo-indefinido{
+    padding: 2px 35px;
+    background-color: #EFEFEF;
+}
+
+.registro-hijo-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.registro-hijo-botones button{
+    cursor: pointer;
+    margin: 20px;
+    width: 40%;
+    padding: 1em;
+    background-color: #95B8F6;
+    border: none;
+    border-radius: 5px;
+}

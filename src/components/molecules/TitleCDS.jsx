@@ -4,7 +4,7 @@ function TittleCDS() {
     return ( 
         <>
         <h1>
-            Que es <span>CDS</span> Cura Della Skin
+            Que es <span className="CDS">CDS</span> Cura Della Skin
         </h1>
         </>
 

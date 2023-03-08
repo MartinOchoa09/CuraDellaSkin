@@ -1,7 +1,7 @@
-import FormJabones from "../components/atoms/FormJabones";
+import FormInformacion from "../components/atoms/FormInformacion";
 function Jabones() {
     return ( 
-        <FormJabones/>
+        <FormInformacion/>
      );
 }
 
