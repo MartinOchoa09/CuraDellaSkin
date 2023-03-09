@@ -3,6 +3,8 @@ import {Link} from "react-router-dom";
 import Dermatologa from "../../assets/img/dermatologa.png"
 import Favorite from "../../assets/icons/Favorite.png"
 import Dermolimpiadora from "../../assets/img/Dermolimpiadora.png"
+
+//verifiacion cards
 function Cards() {
     const boton = () => {
         alert("Agregado al carrito")
