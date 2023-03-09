@@ -13,7 +13,7 @@ import Dermatologa from "../../assets/img/dermatologa.png";
 import "../../assets/styles/Home.css";
 import "../../assets/styles/Contactanos.css";
 
-
+//verificacion de home
 
 function FormHome() {
 
