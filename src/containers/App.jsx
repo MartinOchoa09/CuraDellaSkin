@@ -5,6 +5,7 @@ import Login from "../pages/Login";
 import Informacion from "../pages/Informacion"
 import Comprar from "../pages/Comprar"
 import Favoritos from "../pages/Favoritos"
+import Jabones from "../components/atoms/FormJabones"
 
 import UserContext from "../context/Usercontext";
 import ProtectedParentRouter from "./ProtectedParentRoute";
@@ -26,6 +27,7 @@ function App() {
         <Route path="/comprar" element={<Comprar/>}></Route>
         <Route path="/favoritos" element={<Favoritos/>}></Route>
         <Route path="/recomendaciones" element={<Recomendaciones/>}></Route>
+        <Route path="/jabones" element={<Jabones/>}></Route>
       </Routes>
       </UserContext.Provider>
     </BrowserRouter>
