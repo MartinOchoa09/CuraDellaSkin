@@ -1,0 +1,19 @@
+.div-padre{
+    display: flex;
+}
+
+.div-padre-hijo{
+    grid-column: auto;
+    flex-direction: row;
+}
+
+.div-padre-hijo img{
+    display: flex;
+    width: 20vh;
+}
+
+.div-padre-hijo h1{
+    margin: 40px 0;
+    text-align: center;
+    font-size: 2.0rem;
+}

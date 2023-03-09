@@ -1,6 +1,14 @@
+*{
+    margin: 0;
+}
+
 .div-padre{
     display: flex;
     flex-direction: column;
+}
+
+.categoria{
+    margin: 50px 0;
 }
 
 .container {
@@ -18,16 +26,16 @@
     color: #F9D99A;
 }
 
-h1{
+.edicion-h1{
     text-align: center;
     font-weight: 400;
-    
 }
 
 .container p{
     padding: 0 30px;
     color: #F9D99A;
     max-width: 50rem;
+   
 }
 
 .categoria-jabones{
@@ -52,13 +60,13 @@ h1{
 
 h3{
     font-size: 25px;
-    padding: 20px 0;
-    background-color: #D9D9D9;
+    padding: 25px 0;
+    background-color: #F9D99A;
     margin: 0 15px;
 }
 
 .cura-della-skin{
-    margin: 140px 40px;
+    margin: 100px 0;
 }
 
 .texto-cura-della-skin{
@@ -68,11 +76,15 @@ h3{
 
 .titulo-cds{
     background-color: #D9D9D9;
-    padding: 0 70px;
+    margin: 0 20px;
 }
 
 .tutoriales-cds{
     padding: 0px 30px;
 }
 
-
+.contactanos-hijo-title{
+    text-align: center;
+    font-weight: 400;
+    background-color: #ADD5FA;
+}

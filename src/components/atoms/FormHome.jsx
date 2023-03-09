@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useRef, useContext } from "react";
+import { useRef, useContext, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Jabones from "../../assets/img/Jabones.png";
@@ -17,22 +17,31 @@ import "../../assets/styles/Contactanos.css";
 
 function FormHome() {
 
-    const {isLoged, setIsLoged} = useContext(UserContext)
-    const navigate = useNavigate()
+        const navigate = useNavigate()
         const formData = useRef()
+        const [load, setIsLoad] = useState(false)
+        const {isLoged, setIsLoged} = useContext(UserContext)
 
     const handlerClickLogin = (e) => {
-        e.preventdefault
-        if (isLoged) {
+        if(setIsLoad(!load)){
             alert("Su correo se ha enviado con exito")
         }else{
-            alert("Usted tiene que estar registrado")
-            navigate("/login");
+            alert("Tienes que iniciar sesión")
+            navigate("/login")
         }
+        // if (isLoged) {
+        //     alert("Su correo se ha enviado con exito")
+        // }else{
+        //     alert("Usted tiene que estar registrado")
+        //     navigate("/login");
+        // }
     }
 
+    // useEffect(()=>{
+    //     alert("Usted debe estar registrado en CDS")
+    // }, [load])
+
     return (
-        <form ref={formData}>
     <div className="div-padre">
         <Header />
     <div className="container">
@@ -42,7 +51,7 @@ function FormHome() {
         </p>
     </div>
     <div className="categoria">
-        <h1>Categoria de Productos</h1>
+        <h1 className="edicion-h1">Categoria de Productos</h1>
     </div>
     <div className="categoria-jabones">
         <div className="contenedor">
@@ -62,8 +71,9 @@ function FormHome() {
             </div>
         </div>
     </div>
+    <form ref={formData}>
     <div className="contactanos-clase-padre">
-                    <h1 className="contactanos-hijo-title">Contactanos</h1>
+                <h1 className="contactanos-hijo-title">Contactanos</h1>
                 <div className="contactanos-hijo">
                     <div className="informacion">
                         <div className="contactanos-hijo-nombre">
@@ -100,9 +110,9 @@ function FormHome() {
                         <img src={Dermatologa} className="dermatologa" />
                     </div>
         </div>
+        </form>
     <Footer/>
     </div>
-    </form>
      );
 }
 

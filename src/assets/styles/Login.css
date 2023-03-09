@@ -1,0 +1,58 @@
+.form-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.imagen-empresa img{
+    width: 10vh;
+}
+.form-login-register{
+    justify-content: center;
+    
+}
+
+.form-login-iniciosesion{
+    border-bottom: 1px solid #000;
+}
+
+
+.form-login div{
+    margin: 0;
+    padding: 1em;
+}
+
+.form-login button,
+.form-login input{
+    width: 100%;
+    padding: .4em;
+    border-radius: 10px;
+}
+
+.form-login input{
+    border: none;
+    background-color: #EFEFEF;
+    outline: 0;
+}
+
+.form-login-username {
+    text-align: justify;
+}
+.form-login-password{
+    text-align: justify;
+}
+
+.form-login button{
+    background-color: #95B8F6;
+    cursor: pointer;
+}
