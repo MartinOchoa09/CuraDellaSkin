@@ -6,14 +6,13 @@ import Informacion from "../pages/Informacion"
 import Comprar from "../pages/Comprar"
 import Favoritos from "../pages/Favoritos"
 import Jabones from "../components/atoms/FormJabones"
-
 import UserContext from "../context/Usercontext";
 import ProtectedParentRouter from "./ProtectedParentRoute";
 import Registro from "../pages/Registro";
 import Recomendaciones from "../pages/Recomendaciones";
 
 function App() {
-  const [isLoged, setIsLoged] = useState(true)
+  const [isLoged, setIsLoged] = useState(false)
 
   return (
     <BrowserRouter>
@@ -22,7 +21,7 @@ function App() {
         <Route path="/" element={<Home/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route element={<ProtectedParentRouter isLoged={isLoged}/>}></Route>
-        <Route path="/registro" element={<Registro/>}></Route>
+        <Route path="/register" element={<Registro/>}></Route>
         <Route path="/informacion" element={<Informacion/>}></Route>
         <Route path="/comprar" element={<Comprar/>}></Route>
         <Route path="/favoritos" element={<Favoritos/>}></Route>

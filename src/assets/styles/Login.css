@@ -13,19 +13,31 @@
     justify-content: space-evenly;
 }
 
-
 .imagen-empresa img{
     width: 10vh;
-}
-.form-login-register{
-    justify-content: center;
-    
 }
 
 .form-login-iniciosesion{
     border-bottom: 1px solid #000;
 }
 
+.form-login-iniciosesion button{
+    border: none;
+    color: #fff;
+}
+
+.forgotPassword{
+    text-decoration: none;
+    color: #000;
+}
+
+.link-register{
+   border: 4px solid #95B8F6;
+   border-radius: 10px;
+   text-decoration: none;
+   padding: 5px 50px;
+   color: #000;
+}
 
 .form-login div{
     margin: 0;
@@ -56,3 +68,4 @@
     background-color: #95B8F6;
     cursor: pointer;
 }
+

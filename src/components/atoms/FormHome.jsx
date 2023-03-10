@@ -13,13 +13,12 @@ import Dermatologa from "../../assets/img/dermatologa.png";
 import "../../assets/styles/Home.css";
 import "../../assets/styles/Contactanos.css";
 
-//verificacion de home
 
 function FormHome() {
 
         const navigate = useNavigate()
-        const formData = useRef()
-        const [load, setIsLoad] = useState(false)
+        const forms = useRef()
+        const [load, setIsLoad] = useState(true)
         const {isLoged, setIsLoged} = useContext(UserContext)
 
     const handlerClickLogin = (e) => {
@@ -36,11 +35,6 @@ function FormHome() {
         //     navigate("/login");
         // }
     }
-
-    // useEffect(()=>{
-    //     alert("Usted debe estar registrado en CDS")
-    // }, [load])
-
     return (
     <div className="div-padre">
         <Header />
@@ -71,7 +65,7 @@ function FormHome() {
             </div>
         </div>
     </div>
-    <form ref={formData}>
+    <form ref={forms}>
     <div className="contactanos-clase-padre">
                 <h1 className="contactanos-hijo-title">Contactanos</h1>
                 <div className="contactanos-hijo">
@@ -81,14 +75,15 @@ function FormHome() {
                             <input type="text"/>
                         </div>
                         <div className="separacion">
-                            <label>Email</label>
-                            <input type="email" />
+                            <label>Numero de telefono</label>
+                            <input type="tel" placeholder="555-555-5555"/>
+                            
                         </div>
                     </div>
                     <div className="contactanos-hijo-personal">
                         <div className="contactanos-hijo-personal-numero">
-                            <label>Numero de telefono</label>
-                            <input type="tel" placeholder="555-555-5555"/>
+                            <label>Email</label>
+                            <input type="email" />
                         </div>
                         <div className="separacion">
                             <label>Sexo</label>
@@ -103,7 +98,7 @@ function FormHome() {
                         <textarea rows="3"></textarea>
                     </div>
                     <div className="button-enviar">
-                        <button onClick={handlerClickLogin}>Enviar</button>
+                        <button onClick={handlerClickLogin} className="button-contactanos">Enviar</button>
                     </div>
                 </div>
                     <div className="textura">
