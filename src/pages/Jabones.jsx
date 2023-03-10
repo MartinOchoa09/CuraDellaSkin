@@ -1,5 +1,5 @@
 
-import FormInformacion from "../components/atoms/FormInformacion";
+
 import FormJabones from "../components/atoms/FormJabones";
 
 function Jabones() {
