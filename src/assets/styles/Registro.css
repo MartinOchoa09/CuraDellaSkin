@@ -1,6 +1,7 @@
-.form-padre{
+.main-padre{
     display: flex;
     justify-content: center;
+    margin: 10%;
 }
 
 .registro-hijo input{
@@ -14,7 +15,7 @@
 .registro-hijo{
     display: flex;
     flex-direction: column;
-
+    justify-content: space-evenly;
 }
 
 .registro-hijo h3{
@@ -23,6 +24,7 @@
 
 .registro-hijo .titulos{
     border-bottom: 1px solid black;
+    margin-bottom: 5%;
 }
 
 .registro-hijo .registro-usuario-contrasena{
@@ -56,4 +58,5 @@
     background-color: #95B8F6;
     border: none;
     border-radius: 5px;
+    color: #fff;
 }

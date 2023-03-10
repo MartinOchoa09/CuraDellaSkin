@@ -44,6 +44,7 @@ function FormRegister() {
     }
 
     return ( 
+        <main className="main-padre">
         <form ref={formRegister} className="form-padre">
             <div className="registro-hijo">
                 <div className="titulos">
@@ -73,7 +74,6 @@ function FormRegister() {
                         <label>Contraseña</label>
                         <input type="password" name="contrasena"/>
                     </div>
-                
                 </div>
 
                 <label>Fecha de nacimiento</label>
@@ -92,6 +92,7 @@ function FormRegister() {
 
             </div>
         </form>
+        </main>
      );
 }
 

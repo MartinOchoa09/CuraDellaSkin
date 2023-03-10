@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from "react";
+import { useContext, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Name from "../molecules/Name";
 import Logo from "../../assets/icons/cdsSecundario.png";
@@ -49,12 +49,12 @@ function FormLogin() {
                 <input type="password" name="password"/>
             </div>
             <div className="form-login-iniciosesion">
-                <button onClick={handlerClickLogin}>Iniciar Sesion</button>
-                <Link to="/forgotPassword">Recuperar contraseña</Link>
+                <button onClick={handlerClickLogin}>Iniciar Sesión</button>
+                <Link to="/forgotPassword" className="forgotPassword">¿Olvidaste tu contraseña?</Link>
             </div>
             </div>
             <div className="form-login-register">
-                ¿No tienes cuenta? <Link to="/register">Registrate ahora</Link>
+                <Link to="/register" className="link-register">Registrar una cuenta</Link>
             </div>
         </div>
         </form>
