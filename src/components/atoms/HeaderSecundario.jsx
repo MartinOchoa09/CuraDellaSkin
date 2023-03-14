@@ -13,8 +13,9 @@ function HeaderSecundario() {
       <div className="navbar-collapse-secundario">
         <ul className="navbar-nav-secundario">
           <li className="nav-item-secundario"><Link to="/" className="nav-link">Inicio</Link></li>
-          <li className="nav-item-secundario"><Link to="/informacion" className="nav-link">Informacion</Link></li>
-          <li className="nav-item-secundario"><Link href="/contactanos" className="nav-link">Contactanos</Link></li>
+          <li className="nav-item-secundario"><Link to="/login" className="nav-link">Iniciar Sesión</Link></li>
+          <li className="nav-item-secundario"><Link to="/favoritos" className="nav-link">Favoritos</Link></li>
+          <li className="nav-item-secundario"><Link to="/comprar" className="nav-link">Comprar</Link></li>
         </ul>
         <form className="search-form-secundario">
           <input type="text" placeholder="Buscar" className="search-box-secundario" />

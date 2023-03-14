@@ -7,8 +7,6 @@ function FormJabones() {
         <div className="hijo">
             <HeaderSecundario/>
             <Cards/>
-
-        
         </div>
     </div>
 

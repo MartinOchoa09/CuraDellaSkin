@@ -86,7 +86,7 @@ h3{
 .tutoriales-cds{
     padding: 0px 30px;
 }
-
+ 
 .contactanos-hijo-title{
     text-align: center;
     font-weight: 400;
@@ -96,4 +96,8 @@ h3{
 .informacion{
     display: flex;
     flex-wrap: wrap;
+}
+
+.seleccion{
+    margin: 10px;
 }

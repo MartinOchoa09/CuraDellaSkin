@@ -87,7 +87,7 @@ function FormHome() {
                         </div>
                         <div className="separacion">
                             <label>Sexo</label>
-                            <select>
+                            <select className="seleccion">
                                 <option value="Hombre">Hombre</option>
                                 <option value="Mujer">Mujer</option>
                             </select>
