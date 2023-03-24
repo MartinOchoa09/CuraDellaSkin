@@ -35,4 +35,9 @@
 .h3, .footer-span{
     background-color: #ADD5FA;
     color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.footer-container-contactanos{
+    margin: 20px;
 }

@@ -25,13 +25,17 @@
   .navbar-collapse-secundario {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    justify-content: space-around;
   }
   
   .navbar-nav-secundario {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    width: 80%;
+    justify-content: space-around;
   }
   
   .nav-item-secundario {
@@ -41,7 +45,7 @@
   .nav-link-secundario {
     color: #3c3c3c;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
     padding: 10px 30px;
     border-radius: 10px;
@@ -73,4 +77,4 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-  }  
+  }

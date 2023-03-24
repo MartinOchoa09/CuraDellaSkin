@@ -1,7 +1,7 @@
 .contactanos-clase-padre{
     display: flex;
     flex-wrap: wrap;
-    margin: 60px;
+    margin: 30px;
 }
 
 .contactanos-hijo-title{

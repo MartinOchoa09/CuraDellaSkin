@@ -1,5 +1,11 @@
-.title-favoritos{
+.main-padre-favoritos{
+    display: flex;
+}
+
+.titulo-favoritos{
     background-color: #ADD5FA;
     text-align: center;
+    width: 100%;
+    margin: 5%;
 }
 

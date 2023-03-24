@@ -1,0 +1,8 @@
+.title{
+    width: 95%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    background-color: #ADD5FA;
+    font-weight: 500;
+}

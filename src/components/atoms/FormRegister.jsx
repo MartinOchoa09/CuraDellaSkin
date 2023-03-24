@@ -16,7 +16,7 @@ function FormRegister() {
         
         const form = new FormData(formRegister.current)
     
-        let uri = "https://cds.iothings.com.mx:3000/users";
+        let uri = "https://localhost:3000/users";
         let options = {
             method: 'POST',
             headers: {"Content-Type": 'application/json'},
@@ -29,6 +29,7 @@ function FormRegister() {
               password: form.get('contrasena'),
               fecha_nacimiento: form.get('fechaN'),
               sexo: form.get('sexo'),
+              admin: false,
             })
         }
         fetch(uri, options)

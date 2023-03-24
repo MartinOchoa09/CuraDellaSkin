@@ -4,6 +4,7 @@ import Name from "../molecules/Name";
 import Logo from "../../assets/icons/cdsSecundario.png";
 import "../../assets/styles/Login.css";
 import UserContext from "../../context/Usercontext";
+import AdminContext from "../../context/AdminContext";
 
 
 function FormLogin() {
@@ -11,23 +12,27 @@ function FormLogin() {
     const navigate = useNavigate();
     const form = useRef();
     const {isLoged, setIsLoged} = useContext(UserContext);
+    const {isAdmin, setIsAdmin} = useContext(AdminContext);
     
     const handlerClickLogin = (e) =>{
         e.preventDefault()
         const formData = new FormData(form.current);
         const username = formData.get("usuario");
         const contrasena = formData.get("password");
-        const url = `https://cds.iothings.com.mx:3000/users/${username}/${contrasena}`;
+        const url = `https://localhost:3000/users/${username}/${contrasena}`;
 
         fetch(url)
         .then((response) => response.json())
         .then((data) => {   
-            console.log("datos", data)})
+            console.log("datos", data)
+            console.log("datos", data.datos[2])
+            setIsLoged(true)
+            setIsAdmin(data.datos[2])
+             navigate("/")
+        })
         .catch((err) => {
-            console.log(err)
+            console.log("Error", err)
         });
-        setIsLoged(true)
-        navigate("/")
     };
     
     
@@ -50,7 +55,6 @@ function FormLogin() {
             </div>
             <div className="form-login-iniciosesion">
                 <button onClick={handlerClickLogin}>Iniciar Sesión</button>
-                <Link to="/forgotPassword" className="forgotPassword">¿Olvidaste tu contraseña?</Link>
             </div>
             </div>
             <div className="form-login-register">

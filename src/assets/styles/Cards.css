@@ -1,24 +1,32 @@
 .divpadre{
     display: flex;
+    flex-wrap: wrap;
     height: 60vh;
     justify-content: space-evenly;
-    
- 
-    
+    margin-top: 5%;
+}
 
-   
+.divcard{
+    margin: 5% 0;
+}
 
+.titulo-card{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    background-color: #ADD5FA;
+    border-radius: 10px;
 }
 
 
-.divcard{
+.character{
     display: flex;
    flex-direction: column;
     width: 25vw;
     height: 55vh;
     border: 1px solid #CAC4D0;
     border-radius: 12px;
-
 }
 
 
@@ -34,11 +42,7 @@
  display: flex;
  justify-content: end;
   height: 30px;
-  width: 20px;
-  
-
-   
-   
+  width: 20px; 
 }
 
 .parrafos{
@@ -60,9 +64,7 @@ color: #1C1B1F;
 .divcabezera{
 display: flex;
 flex-direction: row;
-align-items: center;
-
-    
+align-items: center;  
 }
 
 .divcabezera2{
@@ -121,4 +123,13 @@ align-items: center;
 .agregar{
     background-color: #F9D99A;
     color: #fa5f49;
+}
+
+.Favorite{
+    border: 1px solid #ADD5FA;
+    border-radius: 5px;
+}
+
+.cantidad-productos{
+    margin: 4px;
 }

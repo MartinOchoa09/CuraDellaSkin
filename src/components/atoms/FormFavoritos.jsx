@@ -1,14 +1,18 @@
-import HeaderSecundario from "./HeaderSecundario";
+import Navbar from "./Navbar";
 import "../../assets/styles/Favoritos.css";
 function FormFavoritos() {
     return ( 
-        <main className="mainPadre">
-            <HeaderSecundario/>
-            <h1 className="title-favoritos">Favoritos</h1>
+        <>
+        <Navbar/>
+        <main className="main-padre-favoritos">
+            <div className="titulo-favoritos">
+                <h1>Favoritos</h1>
+            </div>
             <form>
                 
             </form>
         </main>
+        </>
      );
 }
 

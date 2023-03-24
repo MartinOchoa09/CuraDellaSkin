@@ -8,7 +8,7 @@ import "../../assets/styles/Footer.css";
 
 function Footer() {
     return ( 
-            <div className="footer-container">
+            <main className="footer-container container-fluid">
                 <div className="footer-container-servicio">
                     <div><h3 className="h3">Servicio de plataforma</h3></div>
                     <div><Link to="/contactanos"><span className="footer-span">contacto</span></Link></div>
@@ -21,12 +21,14 @@ function Footer() {
                 </div>
                 <div className="footer-container-contactanos">
                     <div><h3 className="h3">Contactos</h3></div>
-                    <div>
+                    <div><Link to="https://api.whatsapp.com/send?phone=9181071656&text=Deseo obtener mas informacion">
                         <img src={Contacts} alt="Icono contactos"/>
+                        </Link>
                         <label className="footer-span">918-107-1656</label>
                     </div>
-                    <div>
+                    <div><Link to="https://api.whatsapp.com/send?phone=9651193137&text=Deseo obtener mas informacion">
                         <img src={Contacts} alt="Icono contactos"/>
+                        </Link>
                         <label className="footer-span">965-119-3170</label>
                     </div>
                     <div><h3 className="h3">Siguenos en:</h3></div>
@@ -37,7 +39,7 @@ function Footer() {
                         <div> <img src={Twitter} alt="Icono Twitter" /></div>
                     </div>
                 </div>
-            </div>
+            </main>
      );
 }
 

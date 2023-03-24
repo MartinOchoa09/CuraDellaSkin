@@ -2,3 +2,14 @@
     text-align: center;
     font-size: large;
 }
+
+.chupala{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+    height: 100%;
+
+}
