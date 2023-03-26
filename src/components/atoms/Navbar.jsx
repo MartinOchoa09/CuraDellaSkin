@@ -28,7 +28,7 @@ function navbar() {
               <Link className="nav-link" to="/tutoriales">Videoteca</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/correos">Correos</Link>
+              <Link className="nav-link" to="/recomendacion">Agregar rutina</Link>
             </li>
             </>
             )

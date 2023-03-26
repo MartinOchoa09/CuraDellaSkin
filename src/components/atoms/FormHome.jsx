@@ -29,22 +29,19 @@ function FormHome() {
     <main className="div-padre">
         <Header />
         <CategoriaJabones />
-        <div class="container segundaSecAbout2">
-            <div class="row">
-            <div class="col-md-6 color-parrafo">
-                    <div class="p-4">
-                        <div class="d-flex">
-                            <div>
-                                <p class="text-muted mb-0 parrafo"><SobreCDS/></p>
-                            </div>
+            <div class="container sobrecds-video">
+                <div class="row">
+                    <div class="col texto-sobrecds">
+                        <div className="texto-secundario-sobrecds">
+                            <p class="text-muted mb-0 parrafo"><SobreCDS/></p>
                         </div>
                     </div>
-                </div>
-                <div className="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start tutoriales-cds" data-aos="fade-right" data-aos-delay="150">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/d4RB0_R59EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="img-fluid"></iframe>
+                    <div class="col video-informativo">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d4RB0_R59EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
+        <div class="col-12">
         <form ref={forms}>
     <div className="contactanos-clase-padre">
                 <h1 className="contactanos-hijo-title">Contactanos</h1>
@@ -86,6 +83,7 @@ function FormHome() {
                     </div>
         </div>
         </form>
+        </div>
         <Footer/>
     </main>
      );

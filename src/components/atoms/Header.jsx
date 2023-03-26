@@ -32,7 +32,7 @@ function Header() {
               <Link className="nav-link" to="/tutoriales">Videoteca</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="">Correos</Link>
+              <Link className="nav-link" to="/rutinas">Rutinas</Link>
             </li>
             </>)
             : (<>
@@ -41,6 +41,9 @@ function Header() {
             </li>
             <li class="nav-item">
               <Link className="nav-link" to="/login">Iniciar Sesión</Link>
+            </li>
+            <li class="nav-item">
+              <Link className="nav-link" to="/rutinas">Rutinas</Link>
             </li>
             <li class="nav-item">
               <Link className="nav-link" to="/carrito">Carrito</Link>

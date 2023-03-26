@@ -1,15 +1,18 @@
-import { useEffect, useState } from "react";
-import Cards from "../molecules/Cards";
+import { useContext, useEffect, useState } from "react";
 import HeaderSecundario from "./HeaderSecundario";
-import TitleCards from "../molecules/TitleCards"
+import TokenContext from "../../context/TokenContext";
+import GroupCards from "../molecules/GroupCards";
+import TituloCard from "../molecules/TituloCard";
 import "../../assets/styles/Cards.css";
 
 
 function FormJabones() {
         const [products, setproduct] = useState([])
+        const {isToken, setIsToken} = useContext(TokenContext)
 
-    useEffect(() =>{
-        fetch("https://localhost:3000/productos").then(response => response.json()).then(data => {
+    useEffect(() =>{  
+        let url = "https://localhost:3000/productos";
+        fetch(url).then(response => response.json()).then(data => {
             console.log(data)
             setproduct(data)
         })
@@ -19,14 +22,14 @@ function FormJabones() {
             <>
                 <HeaderSecundario/>
             <main className="divpadre">
-                <TitleCards/>
-                { products.map(product => 
+                <TituloCard/>
+                {products.map(product => 
                     <>
                     {console.log("esto es el caracter",product)}
                     <div key={product._id} className="divcard">
 
-                    <Cards keys={product.id} 
-                    amount={product.cantidad}
+                    <GroupCards keys={product.id} 
+                    // amount={product.cantidad}
                      file={product.imagen} 
                      name={product.nombre} 
                      price={product.precio}/>

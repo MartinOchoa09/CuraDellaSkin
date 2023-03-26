@@ -1,7 +1,3 @@
-*{
-    margin: 0;
-}
-
 .div-padre{
     display: flex;
     flex-direction: column;
@@ -15,23 +11,9 @@
     cursor: pointer;
 }
 
-.foto-cabecera h2{
-    padding: 50px 90px;
-    font-weight: 400;
-    align-items: center;
-    color: #F9D99A;
-}
-
 .edicion-h1{
     text-align: center;
     font-weight: 400;
-}
-
-.foto-cabecera p{
-    padding: 0 30px;
-    color: #F9D99A;
-    max-width: 50rem;
-   
 }
 
 .categoria-jabones{
@@ -53,30 +35,6 @@
     font-style: normal;
     gap: 20px;
 }
-
-.categoria-jabones h3{
-    font-size: 25px;
-    padding: 25px 0;
-    background-color: #F9D99A;
-    margin: 0 15px;
-}
-
-.cura-della-skin{
-    margin: 100px 0;
-}
-
-.texto-cura-della-skin{
-    display: flex;
-}
-
-.titulo-cds{
-    background-color: #D9D9D9;
-    margin: 0 20px;
-}
-
-.tutoriales-cds{
-    padding: 0px 30px;
-}
  
 .contactanos-hijo-title{
     text-align: center;
@@ -89,10 +47,6 @@
     flex-wrap: wrap;
 }
 
-.seleccion{
-    margin: 10px;
-}
-
 .color-boton{
     background-color: #F9D99A;
     width: 100%;
@@ -100,16 +54,41 @@
 
 .boton-tamano{
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .boton-tamano:hover{
     background-color: #ADD5FA;
 }
 
-.segundaSecAbout2{
-    margin: 10%;
+.informacion-cds .CDS{
+    text-align: center;
+    font-size: large;
 }
 
-.color-parrafo{
-    background-color: #D9D9D9;
+.chupala{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+    height: 100%;
+}
+
+.CDS{
+    color: #0775F5;
+}
+
+.sobrecds-video{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+}
+
+.texto-sobrecds{
+    display: flex;
+    align-items: center;
+    background: #D9D9D9;
 }

@@ -1,19 +1,51 @@
-.div-padre{
+.main-rutina{
     display: flex;
+    align-items: center;
+    
 }
 
-.div-padre-hijo{
-    grid-column: auto;
-    flex-direction: row;
-}
-
-.div-padre-hijo img{
-    display: flex;
-    width: 20vh;
-}
-
-.div-padre-hijo h1{
-    margin: 40px 0;
+.form-rutina h1{
     text-align: center;
-    font-size: 2.0rem;
+    margin: 5%;
+    font-size: 2rem;
+}
+
+.texto-rutina{
+   width: 60%;
+   font-size: 14px;
+   
+}
+
+.rutina-textura{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+
+.rutina-textura-secundario{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-div-rutina{
+    display: flex;
+    
+}
+
+
+.button-rutina{
+    width: 95%;
+    text-align: end;
+}
+
+.button-rutina button{
+    padding: 1% 30%;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #95B8F6;
+
 }

@@ -2,9 +2,10 @@ import { useContext, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Name from "../molecules/Name";
 import Logo from "../../assets/icons/cdsSecundario.png";
-import "../../assets/styles/Login.css";
 import UserContext from "../../context/Usercontext";
 import AdminContext from "../../context/AdminContext";
+import "../../assets/styles/Login.css";
+
 
 
 function FormLogin() {
@@ -13,6 +14,7 @@ function FormLogin() {
     const form = useRef();
     const {isLoged, setIsLoged} = useContext(UserContext);
     const {isAdmin, setIsAdmin} = useContext(AdminContext);
+
     
     const handlerClickLogin = (e) =>{
         e.preventDefault()
@@ -20,7 +22,6 @@ function FormLogin() {
         const username = formData.get("usuario");
         const contrasena = formData.get("password");
         const url = `https://localhost:3000/users/${username}/${contrasena}`;
-
         fetch(url)
         .then((response) => response.json())
         .then((data) => {   
@@ -28,7 +29,7 @@ function FormLogin() {
             console.log("datos", data.datos[2])
             setIsLoged(true)
             setIsAdmin(data.datos[2])
-             navigate("/")
+            navigate("/")
         })
         .catch((err) => {
             console.log("Error", err)

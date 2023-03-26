@@ -1,0 +1,62 @@
+.titulo-recomendacion h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    color: #000000;
+    border-bottom: 1px solid black;
+    margin: 5% 10%;
+}
+
+.titulo-agregar-recomendacion{
+    padding: 0 5%;
+}
+
+.div-padre-recomendacion{
+    justify-content: center;
+}
+
+.div-contenedor-recomendacion{
+    width: 50%;
+    justify-content: center;
+    background: #F6F6F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.input-recomendacion{
+    border: none;
+    outline: 0;
+    background: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+}
+
+.label-recomendacion{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.div-botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.boton-agregar-recomendacion{
+    background-color: #95B8F6;
+    color: #FFF;
+}
+
+.boton-productos-recomendacion{
+    background-color: #FFF;
+    color: #000;
+    border: 2px solid #95B8F6;
+}
+

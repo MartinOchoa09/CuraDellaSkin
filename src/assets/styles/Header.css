@@ -30,13 +30,6 @@
     background-size: cover;
 }
 
-.container{
-    color: #F9D99A;
-    margin: 0 15rem;
-    display: flex;
-    flex-direction: column;
-}
-
 .nav-link:hover{
     background-color: #ADD5FA;
     border-radius: 5px;

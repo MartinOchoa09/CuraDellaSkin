@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import LoadContext from "../../context/LoadContext";
 import InputFile from "../molecules/InputFile";
+import TokenContext from "../../context/TokenContext";
 import "../../assets/styles/Productos.css";
 
 function FormAgregarProducto() {
@@ -11,6 +12,7 @@ function FormAgregarProducto() {
     const dispatch = useDispatch()
 
     const {load, setLoad} = useContext(LoadContext)
+    const {token, setToken} = useContext(TokenContext)
 
     const handlerClick = (e) => {
         e.preventDefault();
@@ -19,7 +21,10 @@ function FormAgregarProducto() {
 
         let options = {
             method: 'POST',
-            headers: {"Content-Type": 'application/JSON'},
+            headers: {
+                "Content-Type": 'application/JSON',
+                "Authentication": `Bearer ${token}`
+        },
             body: JSON.stringify({
                 nombre: formData.get('name'),
                 categoria: formData.get('category'),
@@ -27,7 +32,6 @@ function FormAgregarProducto() {
                 precio: formData.get('price'),
                 cantidad: formData.get('amount')
             })
-            
         }
 
         dispatch({
@@ -85,7 +89,7 @@ function FormAgregarProducto() {
                         <label>
                             Precio
                         </label>
-                            <input type="number" name="price"/>
+                             $ <input type="number" name="price"/>
                     </div>
                     <div>
                         <label>

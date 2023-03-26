@@ -1,62 +1,83 @@
-.main-padre{
+#id_dario{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 10%;
+    border-bottom: 1px solid black;
+}
+
+.registro-titulo-principal{
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    color: #000000;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.registro-subtitulo-principal{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.registro-titulo-principal,
+.registro-subtitulo-principal{
+    padding: 0 5%;
+}
+
+.formulario-registro-usuario{
     display: flex;
     justify-content: center;
-    margin: 10%;
 }
 
-.registro-hijo input{
+.div-registro-usuario{
+    width: 50%;
+}
+
+.label-registro-usuario{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.input-registro-usuario{
     border: none;
-    border-radius: 5px;
-    background-color: #EFEFEF;
-    padding: 1em;
-    outline: 0;
+    background: #EFEFEF;
 }
 
-.registro-hijo{
+.radio-registro{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background: #EFEFEF;
+    margin: 0 5px;
+    padding: 5px 0;
+    border-radius: 5px;
 }
 
-.registro-hijo h3{
-    background-color: #fff;
-}
-
-.registro-hijo .titulos{
-    border-bottom: 1px solid black;
-    margin-bottom: 5%;
-}
-
-.registro-hijo .registro-usuario-contrasena{
-    width: 100%;
-    margin: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.sexualidad{
+.botones-registrar{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10%;
+    
 }
 
-.sexualidad .sexo-hombre, .sexo-mujer, .sexo-indefinido{
-    padding: 2px 35px;
-    background-color: #EFEFEF;
-}
-
-.registro-hijo-botones{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.registro-hijo-botones button{
-    cursor: pointer;
-    margin: 20px;
-    width: 40%;
-    padding: 1em;
-    background-color: #95B8F6;
+.registrar-boton{
+    background: #95B8F6;
     border: none;
-    border-radius: 5px;
-    color: #fff;
+}
+
+.cancelar-boton{
+    background: #fff;
+    border: 1px solid #95B8F6;
+    color: #000000;
 }

@@ -28,10 +28,7 @@ function HeaderSecundario() {
           </li>
           <li className="nav-item-secundario">
             <Link to="/tutoriales" className="nav-link-secundario">Videoteca</Link>
-          </li> 
-          <li className="nav-item-secundario">
-            <Link to="/correos" className="nav-link-secundario">Correos</Link>
-          </li>
+          </li>   
         </>)
           :(<>
             <li className="nav-item-secundario">
