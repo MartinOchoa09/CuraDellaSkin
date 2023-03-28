@@ -16,8 +16,8 @@ import Store from "../redux/store/Store.js";
 import LoadContext from "../context/LoadContext";
 import CarritoContex from "../context/CarritoContext";
 import Rutinas from "../pages/Rutinas";
-import Recomendacion from "../pages/Recomendaciones";
 import TokenContext from "../context/TokenContext";
+import ProductContext from "../context/ProductContext";
 
 function App() {
   const [isLoged, setIsLoged] = useState(false)
@@ -25,6 +25,7 @@ function App() {
   const [load, setLoad] = useState(false)
   const [carrito, setCarrito] = useState(false)
   const [token, setToken] = useState(false)
+  const [product, setProduct] = useState(false)
 
   return (
     <BrowserRouter>
@@ -33,6 +34,7 @@ function App() {
     <LoadContext.Provider value={{load, setLoad}}>
     <CarritoContex.Provider value={{carrito, setCarrito}}>
     <TokenContext.Provider value={{token, setToken}}>
+    <ProductContext.Provider value={{product, setProduct}}>
       <Provider store={Store}>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
@@ -45,10 +47,10 @@ function App() {
         <Route path="/tutoriales" element={<Tutoriales/>}></Route>
         <Route path="/productos" element={<Productos/>}></Route>
         <Route path="/rutinas" element={<Rutinas/>}></Route>
-        <Route path="/recomendacion" element={<Recomendacion/>}></Route>
         </Route>
       </Routes>
       </Provider>
+      </ProductContext.Provider>
       </TokenContext.Provider>
       </CarritoContex.Provider>
       </LoadContext.Provider>

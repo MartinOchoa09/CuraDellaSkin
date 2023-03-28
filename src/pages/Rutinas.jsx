@@ -1,4 +1,4 @@
-import FormRutinas from "../components/atoms/FormRutinas";
+import FormRutinas from "../components/molecules/FormRutinas";
 
 
 function Rutinas() {

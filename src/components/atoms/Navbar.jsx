@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import {Link} from "react-router-dom";
 import cds from "../../assets/icons/cds.png";
-import "../../assets/styles/Header.css";
 import AdminContext from "../../context/AdminContext";
+import "../../assets/styles/Header.css";
 
 function navbar() {
 
@@ -28,7 +28,7 @@ function navbar() {
               <Link className="nav-link" to="/tutoriales">Videoteca</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/recomendacion">Agregar rutina</Link>
+              <Link className="nav-link" to="/rutinas">Rutinas</Link>
             </li>
             </>
             )

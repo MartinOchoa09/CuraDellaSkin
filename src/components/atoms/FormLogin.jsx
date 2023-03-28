@@ -4,6 +4,7 @@ import Name from "../molecules/Name";
 import Logo from "../../assets/icons/cdsSecundario.png";
 import UserContext from "../../context/Usercontext";
 import AdminContext from "../../context/AdminContext";
+import TokenContext from "../../context/TokenContext";
 import "../../assets/styles/Login.css";
 
 
@@ -14,10 +15,11 @@ function FormLogin() {
     const form = useRef();
     const {isLoged, setIsLoged} = useContext(UserContext);
     const {isAdmin, setIsAdmin} = useContext(AdminContext);
+    const {token, setToken} = useContext(TokenContext);
 
     
     const handlerClickLogin = (e) =>{
-        e.preventDefault()
+        e.preventDefault();
         const formData = new FormData(form.current);
         const username = formData.get("usuario");
         const contrasena = formData.get("password");
@@ -25,11 +27,12 @@ function FormLogin() {
         fetch(url)
         .then((response) => response.json())
         .then((data) => {   
-            console.log("datos", data)
-            console.log("datos", data.datos[2])
+            console.log("datos", JSON.stringify(data))
             setIsLoged(true)
             setIsAdmin(data.datos[2])
+            setToken(data.token)
             navigate("/")
+
         })
         .catch((err) => {
             console.log("Error", err)

@@ -8,7 +8,7 @@ function FormRegister() {
     const formRegister = useRef()
 
     const [framework, setFramework] = useState("Hombre");
-    const {isToken, setIsToken} = useContext(TokenContext);
+    const {token, setToken} = useContext(TokenContext);
 
     const cambioRadioFramework = e =>{
         setFramework(e.target.value);
@@ -23,7 +23,7 @@ function FormRegister() {
             method: 'POST',
             headers: {
                 "Content-Type": 'application/json',
-                "Authorization": `Bearer ${isToken}`
+                "Authorization": `Bearer ${token}`
         },
             body:JSON.stringify({
               apellido: form.get('apellido'),

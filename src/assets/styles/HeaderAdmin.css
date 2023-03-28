@@ -1,0 +1,34 @@
+.header-admin{
+    padding-top: 10.5rem;
+    padding-bottom: 19rem;
+    text-align: center;
+    background-image: url("../img/imagenAdmin.png");
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.agregar-rutina-home h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 45px;
+    color: #3366BF;
+}
+
+.agregar-rutina-home,
+.agregar-producto-home{
+    border: 1px solid black;
+    margin: 0 10px;
+    border-bottom: 3px dashed #95B8F6;
+}
+
+.agregar-producto-home h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 45px;
+    color: #3366BF;
+}

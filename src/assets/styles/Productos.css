@@ -1,8 +1,9 @@
 .main-productos-padre{
+    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+    height: 100%;
     width: 100%;
 }
 
@@ -21,7 +22,11 @@
 }
 
 .form-productos{
-    background-color: #F6F6F6;
+    background: #F6F6F6;
+    text-align: justify;
+    height: 100%;   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
     border-radius: 10px;
 }
 
@@ -30,13 +35,16 @@
     justify-content: space-around;
     width: 90%;
     margin: 20px;
-    
 }
 
 .title-agregar-productos{
-    border-bottom: 1px solid black;
-    margin: 5%;
-    width: 80%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 45px;
+    color: #3366BF;
+    border-bottom: 3px dashed #3366BF;
 }
 
 .title-agregar-productos h1{
