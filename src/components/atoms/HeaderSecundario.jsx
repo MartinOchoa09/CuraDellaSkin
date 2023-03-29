@@ -10,14 +10,14 @@ function HeaderSecundario() {
   const {isAdmin, setIsAdmin} = useContext(AdminContext)
 
     return ( 
-        <nav className="navbar-secundario">
-      <div className="navbar-brand-secundario">
+        <nav className="navbar navbar-expand-lg navbar-secundario">
+      <div className="container-fluid navbar-brand-secundario">
         <Link to="/" className="navbar-logo-secundario">
           <img src={cdsSecundario} alt="Logo" className="logo-img-secundario" />
         </Link>
       </div>
-      <div className="navbar-collapse-secundario">
-        <ul className="navbar-nav-secundario">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-secundario">
           {isAdmin ? (
           <>
           <li className="nav-item-secundario">

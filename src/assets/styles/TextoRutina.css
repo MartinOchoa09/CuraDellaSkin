@@ -1,0 +1,15 @@
+.clasesitaNanio{
+    max-width: 25rem;
+    margin-top: 5%;
+}
+
+.textureRutina{
+    width: 70%;
+    height: 50%;
+}
+
+.img-texture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

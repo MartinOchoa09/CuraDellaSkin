@@ -92,3 +92,10 @@
     background: #fff;
     border: 0;
 }
+
+
+.like-corazon{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
