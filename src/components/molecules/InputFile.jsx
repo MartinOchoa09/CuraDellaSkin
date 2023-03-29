@@ -1,6 +1,7 @@
 import React, {useCallback} from 'react';
 import {useDropzone} from 'react-dropzone';
 import IconArchivo from "../../assets/icons/subir-archivos.svg";
+import '../../assets/styles/Productos.css'
 
 function MyDropzone() {
   const onDrop = useCallback(acceptedFiles => {
@@ -8,7 +9,7 @@ function MyDropzone() {
   const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
 
   return (
-    <div {...getRootProps()}>
+    <div className='contenedorCentradoDropFile' {...getRootProps()}>
       <input {...getInputProps()} name="file" className="input-dropzone"/>
       {
         isDragActive ?

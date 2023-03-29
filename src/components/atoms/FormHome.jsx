@@ -16,6 +16,7 @@ import "../../assets/styles/Home.css";
 import "../../assets/styles/Contactanos.css";
 import "../../assets/styles/Productos.css";
 import "../../assets/styles/AgregarRecomendacion.css";
+import { Chart } from "chart.js";
 
 function FormHome() {
 
@@ -117,6 +118,9 @@ function FormHome() {
             isAdmin ? (<>
             <main className="div-padre">
                     <HeaderAdmin />
+                    <div>
+                        
+                    </div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-6">
@@ -151,7 +155,7 @@ function FormHome() {
                                                 </div>
                                                 <div class="col-md div-botones">
                                                     <button type="button" class="btn btn-primary btn-lg boton-agregar-recomendacion" onClick={handlerClickAgregar}>Agregar</button>
-                                                    <button type="button" class="btn btn-secondary btn-lg boton-productos-recomendacion" onClick={handlerClickProductos}>Rutinas</button>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -166,11 +170,11 @@ function FormHome() {
                                                     <label>
                                                         Nombre
                                                     </label>
-                                                        <input type="text" name="name"/>
+                                                        <input type="text" className="form-control input-recomendacion" name="name"/>
                                                 </div>
                                                 <div>
                                                     <label>Categoria</label>
-                                                    <select name="category">
+                                                    <select name="category" className="form-control input-recomendacion">
                                                         <option>Tipo de Jabones</option>
                                                         <option name="Jabones">jabones</option>
                                                         <option name="Dermolimpiadoras">Cremas Dermolimpiadoras</option>
@@ -183,21 +187,23 @@ function FormHome() {
                                                     <label>
                                                         Precio
                                                     </label>
-                                                        $ <input type="number" name="price"/>
+                                                        <input type="number" className="form-control input-recomendacion" name="price"/>
                                                 </div>
                                                 <div>
                                                     <label>
                                                         Cantidad
                                                     </label>
-                                                        <input type="number" name="amount"/>
+                                                        <input type="number" className="form-control input-recomendacion" name="amount"/>
                                                 </div>
                                             </div>
-                                            <div className="main-fotos">
-                                                <InputFile/>
+                                            <div className="conteiner-mf">
+                                                <div className="main-fotos">
+                                                    <InputFile/>
+                                                </div>
                                             </div>
                                             <div className="main-guardar-productos">
                                                 <button onClick={handlerClick} className="guardar-productos">Guardar</button>
-                                                <div><button onClick={handlerClickNavigate} className="productos-link">Productos</button></div>
+                                               
                                             </div>
                                     </form>
                                 </div>
@@ -223,7 +229,7 @@ function FormHome() {
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/d4RB0_R59EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div>
+                    </div> main-fotos
                 <div class="col-12">
                 <form ref={forms}>
             <div className="contactanos-clase-padre">
