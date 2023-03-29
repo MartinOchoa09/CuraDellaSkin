@@ -16,7 +16,8 @@ import "../../assets/styles/Home.css";
 import "../../assets/styles/Contactanos.css";
 import "../../assets/styles/Productos.css";
 import "../../assets/styles/AgregarRecomendacion.css";
-import { Chart } from "chart.js";
+import { Chart, Title } from "chart.js";
+
 
 function FormHome() {
 
@@ -118,8 +119,40 @@ function FormHome() {
             isAdmin ? (<>
             <main className="div-padre">
                     <HeaderAdmin />
+                    <div className="titulo-de-mas-vendidos">
+                        <h1>Productos mas vendidos</h1>
+                    </div>
                     <div>
-                        
+                    <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Unidades</th>
+                        <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Jabon</td>
+                        <td>30</td>
+                        <td>$7500</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Protector solar</td>
+                        <td>20</td>
+                        <td>$6000</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>Crema dermolimpiadora</td>
+                        <td>15</td>
+                        <td>$5500</td>
+                        </tr>
+                    </tbody>
+                    </table>
                     </div>
                         <div class="container">
                             <div class="row">
