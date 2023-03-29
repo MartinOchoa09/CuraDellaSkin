@@ -32,3 +32,19 @@
     line-height: 45px;
     color: #3366BF;
 }
+
+.titulo-de-mas-vendidos{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 45px;
+    color: #3366BF;
+    
+}
+
+.titulo-de-mas-vendidos h1{
+    display: flex;
+    justify-content: center;
+}
+

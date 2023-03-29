@@ -16,6 +16,8 @@ import "../../assets/styles/Home.css";
 import "../../assets/styles/Contactanos.css";
 import "../../assets/styles/Productos.css";
 import "../../assets/styles/AgregarRecomendacion.css";
+import { Chart, Title } from "chart.js";
+
 
 
 function FormHome() {

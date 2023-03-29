@@ -28,16 +28,26 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
 }
+
 
 .main-nombre-categoria{
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    width: 87%;
     margin: 20px;
+    
 }
 
 .title-agregar-productos{
+    display: flex;
+    justify-content: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -45,11 +55,13 @@
     line-height: 45px;
     color: #3366BF;
     border-bottom: 3px dashed #3366BF;
+    
 }
 
 .title-agregar-productos h1{
     margin-bottom: 3%;
     margin-left: 10%;
+    
 }
 
 .main-precio-cantidad{
@@ -59,13 +71,22 @@
     margin: 20px;
     
 }
+.conteiner-mf{
+    
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .main-fotos{
+    height: 40%;
     width: 40%;
-    padding: 10px;
     margin-left: 20px;
     border: 1px dashed black;
     background-color: #fff;
+    
+   
 }
 
 .input-fotos{
@@ -74,10 +95,13 @@
 
 .main-guardar-productos{
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .main-guardar-productos button{
     margin: 20px;
+    width: 60%;
 }
 
 .guardar-productos{
@@ -97,12 +121,23 @@
 
 .icono-archivo{
     display: flex;
-    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+        
+}
+.contenedorCentradoDropFile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .iconoArchivo{
     flex-wrap: nowrap;
-    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 
 .tipo-archivo{
