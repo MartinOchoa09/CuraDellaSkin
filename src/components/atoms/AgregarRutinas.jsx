@@ -1,35 +1,33 @@
-// import { useContext, useEffect, useState } from "react";
-// import TokenContext from "../../context/TokenContext";
+import { useContext, useEffect, useState } from "react";
+import TokenContext from "../../context/TokenContext";
 import Navbar from "./Navbar";
-// import FormRutinas from "../molecules/FormRutinas";
-function AgregarRutinas() {
-    // const [rutina, setRutina] = useState([])
-    // const {token, setToken} = useContext(TokenContext)
+import FormRutinas from "../molecules/FormRutinas";
 
-    // useEffect(() => {
-    //     let url = "https://localhost:3000/rutinas"
-    //     let options = {
-    //         method: 'GET',
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //             "Authorization": `Bearer ${token}`
-    //         }
-    //     }
-    //     fetch(url, options)
-    //     .then(response => response.json())
-    //     .then((data) => {
-    //         console.log(data);
-    //         setRutina(data);
-    //     })
-    // },[])
+function AgregarRutinas() {
+    const [rutina, setRutina] = useState([])
+    const {token, setToken} = useContext(TokenContext)
+
+    useEffect(() => {
+        let url = "https://localhost:3000/rutinas"
+        let options = {
+            method: 'GET',
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
+            }
+        }
+        fetch(url, options)
+        .then(response => response.json())
+        .then((data) => {
+            console.log(data);
+            setRutina(data);
+        })
+    },[])
 
     return (
     <>
         <Navbar/>
-        
-        
-
-        {/* <div>
+        <div>
         <h1>RUTINAS</h1>
             {rutina.map(rutinas => 
             <>
@@ -43,7 +41,7 @@ function AgregarRutinas() {
                 </div>
             </>)
             }
-        </div> */}
+        </div>
 
     </> 
     );

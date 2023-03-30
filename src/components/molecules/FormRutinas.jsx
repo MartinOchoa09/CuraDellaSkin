@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-
 import textureRutinaSecundario from "../../assets/textures/texture-rutina-secundario.svg";
 import TextoRutina from "./TextoRutina";
 import AdminContext from "../../context/AdminContext";
@@ -24,48 +23,36 @@ function FormRutinas({ name, categori, tipe, description }) {
         {isAdmin ? 
         (<>
         <Navbar/>
-        <div class="container text-center">
-            <div class="row">
-            <form className="form-rutina">
-                <div class="col">
-                <div className="texto-rutina">
-                    <TextoRutina/>
-                </div>
-                </div>
-               
-            </form>
-        </div>
-        </div>
-                        {/* <main className="main-rutina">
-                            
+        
+                        <main className="main-rutina">
                                 <div className="main-div-rutina">
                                     <div className="rutina-textura">
                                         <div className="texto-rutina">
                                             <div className="rutina-textura">
-                                                
+                                                <TextoRutina/>
                                                 </div>
                                                 <div className="rutina-textura-secundario">
-                                                    
+                                                <TextoRutina/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             
-                    </main> */}
+                    </main>
         </>) 
         : (<>
         <Navbar/>
         
                     <TextoRutina/>
                
-         {/* <Navbar/>
+         <Navbar/>
                 <main className="main-rutina">
                     <form className="form-rutina">
                         <div className="main-div-rutina">
                             <div className="rutina-textura">
-                                <div className="texto-rutina"> */}
+                                <div className="texto-rutina"> 
                             
-                                        {/* <table class="table">
+                                        <table class="table">
                                         <thead>
                                             <tr>
                                             <th scope="col">Nombre</th>
@@ -83,8 +70,8 @@ function FormRutinas({ name, categori, tipe, description }) {
                                             </tr>
                                         </tbody>
                                     </table>
-                                 */}
-                                {/* <div className="rutina-textura">
+                                
+                                 <div className="rutina-textura">
                                     <div className="texto-rutina">
                                         <TextoRutina/>
                                     </div>
@@ -93,7 +80,7 @@ function FormRutinas({ name, categori, tipe, description }) {
                         </div>
                     </div>
                 </form>
-        </main> */}
+        </main>
         </>) };
         
                             

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useRef, useContext } from "react";
 import { useDispatch } from "react-redux";
 import LoadContext from "../../context/LoadContext";
-import InputFile from "../molecules/InputFile";
+import MyDropzone from "../molecules/InputFile";
 import Header from "./Header";
 import Footer from "./Footer";
 import SobreCDS from "../molecules/SobreCDS";
@@ -16,7 +16,6 @@ import "../../assets/styles/Home.css";
 import "../../assets/styles/Contactanos.css";
 import "../../assets/styles/Productos.css";
 import "../../assets/styles/AgregarRecomendacion.css";
-import { Chart, Title } from "chart.js";
 
 
 
@@ -35,7 +34,7 @@ function FormHome() {
 
         const handlerClick = (e) => {
             e.preventDefault();
-            const formData = new FormData(forms.current)
+            const formP = new FormData(formProducto.current)
             let url = "https://localhost:3000/productos";
     
             let options = {
@@ -45,39 +44,33 @@ function FormHome() {
                     "Authentication": `Bearer ${token}`
             },
                 body: JSON.stringify({
-                    nombre: formData.get('name'),
-                    categoria: formData.get('category'),
-                    imagen: toString(formData.get('file')),
-                    precio: formData.get('price'),
-                    cantidad: formData.get('amount')
+                    nombre: formP.get('name'),
+                    categoria: formP.get('category'),
+                    imagen: formP.get('file'),
+                    precio: formP.get('price'),
+                    cantidad: formP.get('amount')
                 })
             }
     
             dispatch({
                 type: "ADD_EVENT",
                 value: {
-                    nombre: formData.get('name'),
-                    categoria: formData.get('category'),
-                    imagen: toString(formData.get('file')),
-                    precio: formData.get('price'),
-                    cantidad: formData.get('amount')
+                    nombre: formP.get('name'),
+                    categoria: formP.get('category'),
+                    imagen: formP.get('file'),
+                    precio: formP.get('price'),
+                    cantidad: formP.get('amount')
                 }
             })
             fetch(url, options)
             .then(response => response.json())
             .then(data => alert(JSON.stringify(data), "Registro de producto exitoso"))
             .catch(err => console.log(err))
-            
+    
             load ? alert("producto agregado") : alert("llene todos los campos");
+            setLoad(true)
         }
 
-        const handlerClickNavigate = (e) => {
-            console.log("si funciona")
-            e.preventDefault()
-            
-            setLoad(true)
-            navigate("/jabones");
-        }
     
         const handlerClickAgregar = (e) => {
             const form = new FormData(formRutina.current);
@@ -101,10 +94,6 @@ function FormHome() {
             .then(data => alert(JSON.stringify(data), "Rutina agregada"));
     
         }
-    
-        // const handlerClickProductos = (e) => {
-        //     navigate("/rutinas")
-        // }
 
     const handlerClickLogin = (e) => {
         if(!isLoged){
@@ -232,12 +221,11 @@ function FormHome() {
                                             </div>
                                             <div className="conteiner-mf">
                                                 <div className="main-fotos">
-                                                    <InputFile/>
+                                                    <MyDropzone/>
                                                 </div>
                                             </div>
                                             <div className="main-guardar-productos">
                                                 <button onClick={handlerClick} className="guardar-productos">Guardar</button>
-                                               
                                             </div>
                                     </form>
                                 </div>
@@ -263,7 +251,7 @@ function FormHome() {
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/d4RB0_R59EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div> main-fotos
+                    </div>
                 <div class="col-12">
                 <form ref={forms}>
             <div className="contactanos-clase-padre">

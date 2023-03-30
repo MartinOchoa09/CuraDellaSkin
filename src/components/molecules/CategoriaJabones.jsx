@@ -35,26 +35,6 @@ function CategoriaJabones() {
                 </div>
             </div>
         </div>
-
-
-        // <main className="main-categoria-productos">
-        //     
-        //     <div className="categoria-jabones">
-        //         <div className="contenedor"> 
-        //             <div class="row row-cols-1 row-cols-md-3 g-4">
-        //                 <div class="col">
-        //                     
-        //                 </div>
-        //                 <div class="col">
-        //                     
-        //                 </div>
-        //                 <div class="col">
-        //                     
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </main>
      );
 }
 
